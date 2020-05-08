@@ -1,0 +1,24 @@
+﻿@using AplicativoBlazor.Data
+
+<div>
+    @for (int i = 0; i < filmes.Count; i++) {
+        <div style="background-color: @(i % 2 == 0 ?  "lightblue" : "lightyellow")">
+            <p>@(i+1). Título: @filmes[i].Nome</p>
+            <p>Lançamento: @filmes[i].Lancamento.ToString("dd/MM/yyyy")</p>
+            <hr />
+        </div>
+     }
+</div>
+
+@code{
+    List<Filmes> filmes;
+
+    protected override void OnInitialized() {
+        filmes = new List<Filmes>() {
+        new Filmes() { Nome = "Nome do filme", Lancamento = new DateTime(2019,04,17)},
+        new Filmes() { Nome = "Nome do filme2", Lancamento = new DateTime(2017, 04, 17) },
+        new Filmes() { Nome = "Nome do filme3", Lancamento = new DateTime(2020, 04, 17) }
+    };
+        base.OnInitialized();
+    }
+}
