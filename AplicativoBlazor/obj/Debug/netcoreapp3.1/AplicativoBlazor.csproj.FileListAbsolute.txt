@@ -55,3 +55,5 @@ E:\Projetos Git C#\AplicativoBlazor\AplicativoBlazor\obj\Debug\netcoreapp3.1\Raz
 E:\Projetos Git C#\AplicativoBlazor\AplicativoBlazor\obj\Debug\netcoreapp3.1\Razor\Shared\ListaFilmesParametro.razor.g.cs
 E:\Projetos Git C#\AplicativoBlazor\AplicativoBlazor\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Filmes.razor.g.cs
 E:\Projetos Git C#\AplicativoBlazor\AplicativoBlazor\obj\Debug\netcoreapp3.1\Razor\Pages\Filmes.razor.g.cs
+E:\Projetos Git C#\AplicativoBlazor\AplicativoBlazor\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\PaginaPalitinhos.razor.g.cs
+E:\Projetos Git C#\AplicativoBlazor\AplicativoBlazor\obj\Debug\netcoreapp3.1\Razor\Shared\PaginaPalitinhos.razor.g.cs

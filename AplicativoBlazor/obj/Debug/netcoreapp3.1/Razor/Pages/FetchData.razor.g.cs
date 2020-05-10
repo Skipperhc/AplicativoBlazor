@@ -73,6 +73,20 @@ using AplicativoBlazor.Shared;
 #line hidden
 #nullable disable
 #nullable restore
+#line 11 "E:\Projetos Git C#\AplicativoBlazor\AplicativoBlazor\_Imports.razor"
+using System.ComponentModel.DataAnnotations;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 12 "E:\Projetos Git C#\AplicativoBlazor\AplicativoBlazor\_Imports.razor"
+using System.Threading;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 3 "E:\Projetos Git C#\AplicativoBlazor\AplicativoBlazor\Pages\FetchData.razor"
 using AplicativoBlazor.Data;
 

@@ -7,6 +7,5 @@ namespace AplicativoBlazor.Data {
     public class Filmes {
         public string Nome { get; set; }
         public DateTime Lancamento { get; set; }
-
     }
 }

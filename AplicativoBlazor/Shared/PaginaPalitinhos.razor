@@ -1,0 +1,104 @@
+﻿@page "/palitinhos"
+
+<h3>PaginaPalitinhos</h3>
+
+<input @bind="palitinhos" />
+<input readonly @bind="frase"/>
+<button class="btn btn-success" @onclick="botao1">1</button>
+<button class="btn btn-success" @onclick="botao2">2</button>
+<button class="btn btn-success" @onclick="botao3">3</button>
+
+@code {
+    int palitinhos = 30;
+    string frase = "aaaaaa";
+
+    void botao1() {
+        palitinhos -= 1;
+        jogadaMaquina();
+    }
+    void botao2() {
+        palitinhos -= 2;
+        jogadaMaquina();
+    }
+    void botao3() {
+        palitinhos -= 3;
+        jogadaMaquina();
+    }
+
+    void jogadaMaquina() {
+        if(palitinhos >= 10) {
+            if(palitinhos >= 10 && palitinhos <= 12) {
+                if(palitinhos >= 11) {
+                    if(palitinhos == 11) {
+                        palitinhos -= 2;
+                        frase = "tirei 2";
+                    } else {
+                        palitinhos -= 3;
+                        frase = "tirei 3";
+                    }
+                } else {
+                    palitinhos -= 1;
+                    frase = "tirei 1";
+                }
+            } else if((palitinhos % 2) == 0) {
+                palitinhos -= 2;
+                frase = "tirei 2, tem uma chance de ganhar";
+            } else if((palitinhos % 5) == 0) {
+                palitinhos -= 1;
+                frase = "tirei 1, talvez vc tenha perdido";
+            } else {
+                if(palitinhos == 13) {
+                    palitinhos -= 1;
+                    frase = "tirei 1";
+                } else {
+                    palitinhos -= 3;
+                    frase = "tirei 3, acho que perdeu";
+                }
+            }
+        } else if(palitinhos >= 6 && palitinhos <= 8) {
+            if(palitinhos >= 7) {
+                if(palitinhos == 7) {
+                    palitinhos -= 2;
+                    frase = "tirei 2, vai perder";
+                } else {
+                    palitinhos -= 3;
+                    frase = "tirei 3, vai perder";
+                }
+            } else {
+                palitinhos -= 1;
+                frase = "tirei 1, vai perder";
+            }
+        } else if(palitinhos >= 2 && palitinhos <= 4) {
+            if(palitinhos >=3 ) {
+                if(palitinhos == 3) {
+                    palitinhos -= 2;
+                    frase = "vc perdeeeeeu";
+                } else {
+                    palitinhos -= 3;
+                    frase = "perdeste";
+                }
+            } else {
+                palitinhos -= 1;
+                frase = "ja era otario";
+            }
+        }
+
+        if(palitinhos == 1) {
+            frase = "ganhei UwU UwU";
+            palitinhos = 999999999;
+        }
+    }
+
+    //void AntesTirar() {
+    //    if((palitinhos % 2) == 0) {
+    //        frase = "deixa-me ver...";
+    //        Thread.Sleep(2000);
+    //    } else if((palitinhos % 5) == 0) {
+    //        frase = "veja bem...";
+    //        Thread.Sleep(2000);
+    //    } else {
+    //        frase = "vou ter de...";
+    //        Thread.Sleep(2000);
+    //    }
+    //}
+}
