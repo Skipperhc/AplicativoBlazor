@@ -11,13 +11,13 @@
 </div>
 
 @code{
-    List<Filmes> filmes;
+    List<Filme> filmes;
 
     protected override void OnInitialized() {
-        filmes = new List<Filmes>() {
-        new Filmes() { Nome = "Nome do filme", Lancamento = new DateTime(2019,04,17)},
-        new Filmes() { Nome = "Nome do filme2", Lancamento = new DateTime(2017, 04, 17) },
-        new Filmes() { Nome = "Nome do filme3", Lancamento = new DateTime(2020, 04, 17) }
+        filmes = new List<Filme>() {
+        new Filme() { Nome = "Nome do filme", Lancamento = new DateTime(2019,04,17)},
+        new Filme() { Nome = "Nome do filme2", Lancamento = new DateTime(2017, 04, 17) },
+        new Filme() { Nome = "Nome do filme3", Lancamento = new DateTime(2020, 04, 17) }
     };
         base.OnInitialized();
     }
